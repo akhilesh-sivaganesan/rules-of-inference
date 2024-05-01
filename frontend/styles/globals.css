@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('../fonts/InterTight-VariableFont_wght.ttf') format('truetype'),  /* Adjust the filename and path accordingly */
+       url('../fonts/InterTight-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@layer base {
+  html {
+    font-family: 'Inter Tight', sans-serif ;
+  }
+}
+
+@layer components {
+  .problem-field-input {
+    @apply w-full rounded bg-[#2ec3a0] px-5 py-3.5 placeholder-[gray] outline-none text-white;
+  }
+}
